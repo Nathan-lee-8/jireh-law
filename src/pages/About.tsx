@@ -1,10 +1,12 @@
+import profileImage from '../assets/CherylLeeImage.jpg'
+
 const About = () => {
   
   return(
     <main id="about">
       <h2 className="centeredText">About</h2>
       <div id="aboutDescription">
-        <img src="/src/assets/CherylLeeImage.jpg" className='imgContainer' alt="Cheryl Lee Photo"/>
+        <img src={profileImage} className='imgContainer' alt="Cheryl Lee Photo"/>
         <p style={{flex: 1}}>
           Cheryl practiced business and real estate law at a mid-size law firm in Seattle and 
           served as General Counsel to Ballmer Group for over four years.  Prior to becoming an 
