@@ -1,12 +1,13 @@
-import profileImage from '../assets/CherylLeeImage.jpg'
+import profileImage from '../assets/CherylLeeImage.jpg';
 
 const About = () => {
   
   return(
     <main id="about">
-      <h2 className="centeredText">About</h2>
+      
+      <img src={profileImage} className='imgContainer' alt="Cheryl Lee Photo"/>
       <div id="aboutDescription">
-        <img src={profileImage} className='imgContainer' alt="Cheryl Lee Photo"/>
+        <h2>About</h2>
         <p style={{flex: 1}}>
           Cheryl practiced business and real estate law at a mid-size law firm in Seattle and 
           served as General Counsel to Ballmer Group for over four years.  Prior to becoming an 
@@ -21,8 +22,10 @@ const About = () => {
           solution orientation is something that I admire greatly.”          
         </p>
         <p>Cheryl is licensed to practice law in the State of Washington </p>
-      </div>
-      <p><b>Background and Education: </b> </p>
+
+        </div>
+        <div id="aboutDescription">
+      <h3><b>Background and Education</b> </h3>
       <p>
         In-House Counsel to Ballmer Group, 2017-2021<br/>
         Legal Advisor to Korean Consulate General in Seattle, 2018-2019<br/>
@@ -34,7 +37,9 @@ const About = () => {
         MBA, University of Washington Foster School of Business<br/>
         BSME, University of Washington School of Engineering
       </p>
-      <p><b>Professional and Community Service:</b> </p>
+      </div>
+        <div id="aboutDescription">
+      <h3><b>Professional and Community Service</b> </h3>
       <p>
         Washington State Bar Association, Member<br/>
         American Bar Association<br/>
@@ -51,6 +56,8 @@ const About = () => {
         University of Washington School of Law, Moot Court Contracts Negotiation Competition Judge<br/>
         University of Washington Foster School of Business, MBA Mentor
       </p>
+      
+      </div>
     </main>
   )
 }

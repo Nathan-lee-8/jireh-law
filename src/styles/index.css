@@ -19,36 +19,6 @@ body {
   width: 100%;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 { 
-  font-size: 24pt;
-}
-
-p, h1, h2 {
-  color: rgba(0, 0, 0, 0.945);
-  font-family: Georgia, serif;
-}
-
-p {
-  font-size: 18px;
-}
-
-a {
-  font-weight: 500;
-  text-decoration: none;
-  color: rgb(73, 71, 71);
-  font-family: Georgia, serif;
-  font-size: 15pt;
-}
-
-.centeredText { 
-  text-align: center;
-}
-
-/* Header Styles */
 header {
   display: flex;
   flex-direction: row;
@@ -60,6 +30,48 @@ header {
   padding-right: 25%;
   box-sizing: border-box;
 }
+
+main {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 25%;
+  padding-right: 25%;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* font & text styles*/
+
+h1{
+  font-size: 20pt;
+  color: rgb(73, 71, 71);
+  font-family: Georgia, serif;
+}
+
+h2 { 
+  font-size: 24pt;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.945);
+  font-family: Georgia, serif;
+}
+
+p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.945);
+  font-family: Georgia, serif;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(73, 71, 71);
+  font-family: Georgia, serif;
+  font-size: 15pt;
+}
+
+/* Header Styles */
 
 #nameLogoContainer {
   display: flex;
@@ -108,25 +120,23 @@ li:hover {
 }
 
 /*Main pages styles*/
-main {
-  display: flex;
-  flex-grow: 1;
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 30%;
-  padding-right: 30%;
-  flex-direction: column;
-  overflow-y: auto;
-}
-
-#homepage{
-  padding-top: 10%;
-  overflow-y: auto;
-}
-
 #homeDescription {
-  width: 310px;
+  background-color: white;
+  margin-left: clamp(10%, 35%, 35%);
+  margin-top: 200px;
+  padding: 20px;
+  width: 380px;
 }
+
+#homeImg{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: clamp(0, 25%, 25%);
+  width: 450px;
+  z-index: -1;
+}
+
+
 
 #about{
   padding-top: 5%;
@@ -139,7 +149,14 @@ main {
   margin-right: 15px;
   float: left;
   vertical-align: bottom;
-  padding-top: 25px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+#aboutDescription {
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
 }
 
@@ -163,7 +180,7 @@ main {
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 880px) {
   header {
     padding-left: 5%;
     padding-right: 10%;
@@ -175,6 +192,19 @@ main {
   main {
     padding-left: 10%;
     padding-right: 10%;
+  }
+}
+
+@media(max-width: 665px){
+  #homeImg{
+    position: relative;
+    margin-left: 20px;
+    margin-Top: 0px;
+    width: 420px;
+  }
+  #homeDescription {
+    margin: 20px;
+    margin-bottom: 0px;
   }
   .nameText{
     display: none;

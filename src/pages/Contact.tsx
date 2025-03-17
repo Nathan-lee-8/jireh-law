@@ -2,8 +2,8 @@ const Contact = () => {
   
   return(
     <main id="contact">
-      <h2 className="centeredText">Contact</h2>
-      <div>
+      <div id="aboutDescription">
+        <h2>Contact</h2>
         <p>
           <br/>
           Jireh Law Group PLLC
