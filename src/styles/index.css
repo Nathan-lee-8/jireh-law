@@ -26,8 +26,8 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20%;
-  padding-right: 25%;
+  padding-left: 15%;
+  padding-right: 15%;
   box-sizing: border-box;
 }
 
@@ -99,6 +99,20 @@ a {
   border: none;
 }
 
+#popupNav{ 
+  display: none;
+}
+
+#popupList{
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  gap: 1px;
+  background-color: black;
+  border: 1px black;
+  border-style: solid;
+}
+
 /* List styles */
 ul {
   padding-inline-start: 0;
@@ -107,7 +121,7 @@ ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 li {
@@ -122,10 +136,10 @@ li:hover {
 /*Main pages styles*/
 #homeDescription {
   background-color: white;
-  margin-left: clamp(10%, 35%, 35%);
+  margin-left: clamp(10%, 40%, 40%);
   margin-top: 200px;
-  padding: 20px;
-  width: 380px;
+  padding-left: 20px;
+  padding-Right: 20px;
 }
 
 #homeImg{
@@ -165,10 +179,10 @@ li:hover {
 }
 
 
-@media (max-width: 1050px) {
+@media (max-width: 1340px) {
   header {
-    padding-left: 15%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .imgContainer {
     width: 150px;
@@ -180,32 +194,33 @@ li:hover {
   }
 }
 
-@media (max-width: 880px) {
-  header {
-    padding-left: 5%;
+
+@media(max-width: 1050px){
+  #popupNav {
+    display: flex
+  }
+  #navBar{
+    display: none;
+  }
+  main { 
     padding-right: 10%;
-  }
-  .imgContainer {
-    width: 110px;
-    height: auto
-  }
-  main {
     padding-left: 10%;
-    padding-right: 10%;
   }
 }
 
-@media(max-width: 665px){
+@media(max-width: 720px){ 
   #homeImg{
     position: relative;
-    margin-left: 20px;
-    margin-Top: 0px;
-    width: 420px;
+    margin: 0;
+    width: auto;
   }
   #homeDescription {
-    margin: 20px;
-    margin-bottom: 0px;
+    margin: 0;
+    margin-top: 40px;
   }
+}
+
+@media(max-width: 500px) {
   .nameText{
     display: none;
   }

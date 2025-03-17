@@ -4,10 +4,9 @@ const About = () => {
   
   return(
     <main id="about">
-      
-      <img src={profileImage} className='imgContainer' alt="Cheryl Lee Photo"/>
       <div id="aboutDescription">
         <h2>About</h2>
+        <img src={profileImage} className='imgContainer' alt="Cheryl Lee Photo"/>
         <p style={{flex: 1}}>
           Cheryl practiced business and real estate law at a mid-size law firm in Seattle and 
           served as General Counsel to Ballmer Group for over four years.  Prior to becoming an 

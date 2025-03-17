@@ -3,11 +3,10 @@ import profileImage from '../assets/CherylLeeImage.jpg'
 const Home = () => {
   
   return(
-    <main id="homepage">
-      
+    <main>
       <div id="homeDescription">
         <h2>Jireh Law Group PLLC</h2>
-        <p style={{flex: 1}}>
+        <p>
           Jireh Law is focused on transactional legal services for small businesses and 
           family offices as well as commercial leasing for both landlords and tenants, commercial 
           and residential property management, commercial real estate and personal property 
