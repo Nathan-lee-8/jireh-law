@@ -33,13 +33,11 @@ header {
 
 main {
   display: flex;
-  flex-grow: 1;
   width: 100%;
   box-sizing: border-box;
   padding-left: 25%;
   padding-right: 25%;
   flex-direction: column;
-  overflow-y: auto;
 }
 
 /* font & text styles*/
@@ -134,12 +132,17 @@ li:hover {
 }
 
 /*Main pages styles*/
+
+#homepage{ 
+}
 #homeDescription {
   background-color: white;
-  margin-left: clamp(10%, 40%, 40%);
+  margin-left: 450px;
   margin-top: 200px;
   padding-left: 20px;
   padding-Right: 20px;
+  width: 380px;
+  height: 250px;
 }
 
 #homeImg{
@@ -149,8 +152,6 @@ li:hover {
   width: 450px;
   z-index: -1;
 }
-
-
 
 #about{
   padding-top: 5%;
@@ -189,8 +190,8 @@ li:hover {
     height: auto
   }
   main {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -203,16 +204,16 @@ li:hover {
     display: none;
   }
   main { 
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 
-@media(max-width: 720px){ 
+@media(max-width: 950px){ 
   #homeImg{
     position: relative;
     margin: 0;
-    width: auto;
+    width: 420px;
   }
   #homeDescription {
     margin: 0;
@@ -223,5 +224,13 @@ li:hover {
 @media(max-width: 500px) {
   .nameText{
     display: none;
+  }  
+  #homeImg{
+    width: auto;
+    height: auto;
+  }
+  #homeDescription {
+    width: auto;
+    height: auto;
   }
 }
