@@ -132,9 +132,6 @@ li:hover {
 }
 
 /*Main pages styles*/
-
-#homepage{ 
-}
 #homeDescription {
   background-color: white;
   margin-left: 450px;
@@ -231,6 +228,6 @@ li:hover {
   }
   #homeDescription {
     width: auto;
-    height: auto;
+    height: auto
   }
 }

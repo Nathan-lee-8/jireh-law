@@ -3,7 +3,7 @@ import profileImage from '../assets/CherylLeeImage.jpg'
 const Home = () => {
   
   return(
-    <main id="homepage">
+    <main>
       <div id="homeDescription">
         <h2>Jireh Law Group PLLC</h2>
         <p>
