@@ -7,16 +7,16 @@ html, body{
 
 body {
   display: flex;
+  flex:1;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: linear-gradient(90deg, rgb(8, 52, 248), #cbcfd3);
+  background: linear-gradient(90deg, #0f5df8, #edf3ff);
   min-height: 100vh;
 }
 
 #root {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
 }
 
 header {
@@ -26,14 +26,14 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
   box-sizing: border-box;
 }
 
 main {
   display: flex;
-  width: 100%;
+  flex: 1;
   box-sizing: border-box;
   padding-left: 25%;
   padding-right: 25%;
@@ -41,7 +41,6 @@ main {
 }
 
 /* font & text styles*/
-
 h1{
   font-size: 20pt;
   color: rgb(73, 71, 71);
@@ -55,10 +54,16 @@ h2 {
   font-family: Georgia, serif;
 }
 
+h3{
+  color: rgba(0, 0, 0, 0.945);
+}
+
 p {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.945);
   font-family: Georgia, serif;
+  padding: 20px;
+  background-color: #ffffff
 }
 
 a {
@@ -70,7 +75,6 @@ a {
 }
 
 /* Header Styles */
-
 #nameLogoContainer {
   display: flex;
   flex-direction: row;
@@ -94,6 +98,11 @@ a {
   display: flex;
   flex-direction: row;
   background-color: white;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  list-style-type: none;
+  gap: 10px;
   border: none;
 }
 
@@ -102,27 +111,22 @@ a {
 }
 
 #popupList{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
   position: absolute;
   top: 80px;
   right: 0px;
-  gap: 1px;
-  background-color: black;
-  border: 1px black;
-  border-style: solid;
-}
-
-/* List styles */
-ul {
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 1px;
+  border: 1px black;
+  border-style: solid;
 }
 
-li {
+.navList {
   background-color: white;
   padding: 8px;
 }
@@ -131,50 +135,50 @@ li:hover {
   background: #dadbf9;
 }
 
-/*Main pages styles*/
-#homeDescription {
-  background-color: white;
-  margin-left: 450px;
-  margin-top: 200px;
-  padding-left: 20px;
-  padding-Right: 20px;
-  width: 380px;
-  height: 250px;
+/*Home pages styles*/
+#homepage{
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+#message{
+  position: absolute;
+  left: 25%;
+  z-index: -1;
+  padding: 4px;
+}
+
+#homeDescriptionContainer {
+  margin-top: 150px;
+  width: 50%;
+  height: auto;
+}
+
+#homeImgContainer{
+  width: 50%;
+  margin-top: 100px;
 }
 
 #homeImg{
-  position: absolute;
-  margin-top: 100px;
-  margin-left: clamp(0, 25%, 25%);
-  width: 450px;
-  z-index: -1;
+  object-fit: contain;
+  width: 100%;
 }
 
-#about{
-  padding-top: 5%;
-  padding-bottom: 5%;
+#imgDescription{
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .imgContainer {
   width: 240px;
   height: auto;
-  margin-right: 15px;
+  margin: 15px;
   float: left;
   vertical-align: bottom;
-  padding-top: 5px;
-  margin-bottom: 20px;
 }
 
-#aboutDescription {
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-}
-
-#contact {
-  padding-top: 5%;
-}
 
 
 @media (max-width: 1340px) {
@@ -182,13 +186,12 @@ li:hover {
     padding-left: 5%;
     padding-right: 5%;
   }
-  .imgContainer {
-    width: 150px;
-    height: auto
-  }
   main {
     padding-left: 15%;
     padding-right: 15%;
+  }
+  #message{
+    left: 15%;
   }
 }
 
@@ -204,30 +207,26 @@ li:hover {
     padding-right: 5%;
     padding-left: 5%;
   }
-}
-
-@media(max-width: 950px){ 
-  #homeImg{
-    position: relative;
-    margin: 0;
-    width: 420px;
-  }
-  #homeDescription {
-    margin: 0;
-    margin-top: 40px;
+  #message{
+    left: 5%;
   }
 }
 
 @media(max-width: 500px) {
-  .nameText{
-    display: none;
-  }  
-  #homeImg{
-    width: auto;
-    height: auto;
+  #homepage{
+    flex-direction: column;
   }
-  #homeDescription {
-    width: auto;
-    height: auto
+  .nameText{
+    font-size: 16pt;
+  }  
+  #homeDescriptionContainer{
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+  #homeImgContainer{
+    margin-top: 0px;
+  }
+  #homeDescriptionContainer, #homeImgContainer {
+    width: 100%;
   }
 }

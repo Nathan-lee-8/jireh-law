@@ -25,20 +25,20 @@ function App() {
             </button>         
             {isMenuOpen &&(
               <ul id="popupList">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                <li><Link to="/testimonials">Client Testimonials</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li className='navList'><Link to="/">Home</Link></li>
+                <li className='navList'><Link to="/about">About</Link></li>
+                <li className='navList'><Link to="/services">Services</Link></li>
+                <li className='navList'><Link to="/testimonials">Client Testimonials</Link></li>
+                <li className='navList'><Link to="/contact">Contact</Link></li>
               </ul>
             )}
           </div>
           <ul id="navBar">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/testimonials">Client Testimonials</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li className='navList'><Link to="/">Home</Link></li>
+            <li className='navList'><Link to="/about">About</Link></li>
+            <li className='navList'><Link to="/services">Services</Link></li>
+            <li className='navList'><Link to="/testimonials">Client Testimonials</Link></li>
+            <li className='navList'><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </header>

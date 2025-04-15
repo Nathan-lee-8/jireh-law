@@ -7,7 +7,7 @@ const About = () => {
       <div id="aboutDescription">
         <h2>About</h2>
         <img src={profileImage} className='imgContainer' alt="Cheryl Lee Photo"/>
-        <p style={{flex: 1}}>
+        <p>
           Cheryl practiced business and real estate law at a mid-size law firm in Seattle and 
           served as General Counsel to Ballmer Group for over four years.  Prior to becoming an 
           attorney, Cheryl was a marketing director at Microsoft, small business owner, engineer at 
@@ -19,8 +19,9 @@ const About = () => {
           over two decades of business experience to holistically understand the clients' issues to 
           deliver legal counsel. One of her clients wrote “your energy is infectious, and your 
           solution orientation is something that I admire greatly.”          
+          <br/><br/>
+          Cheryl is licensed to practice law in the State of Washington 
         </p>
-        <p>Cheryl is licensed to practice law in the State of Washington </p>
 
         </div>
         <div id="aboutDescription">
