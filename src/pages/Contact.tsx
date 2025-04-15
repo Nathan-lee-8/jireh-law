@@ -5,7 +5,6 @@ const Contact = () => {
       <div id="aboutDescription">
         <h2>Contact</h2>
         <p>
-          <br/>
           Jireh Law Group PLLC
           <br/>
           17040 12th AVE NW

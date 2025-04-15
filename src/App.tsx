@@ -22,14 +22,14 @@ function App() {
             </button>         
             {isMenuOpen &&(
               <ul id="popupList">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li className='navList'><Link to="/">Home</Link></li>
+                <li className='navList'><Link to="/contact">Contact</Link></li>
               </ul>
             )}
           </div>
           <ul id="navBar">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li className='navList'><Link to="/">Home</Link></li>
+            <li className='navList'><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </header>
