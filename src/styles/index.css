@@ -9,7 +9,7 @@ body {
   display: flex;
   flex:1;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: linear-gradient(90deg, rgb(8, 52, 248), #cbcfd3);
+  background: linear-gradient(90deg, rgb(0, 47, 255), #eef5ff);
   min-height: 100vh;
 }
 
@@ -139,7 +139,7 @@ li:hover {
 
 #message{
   position: absolute;
-  left: 15%;
+  left: 25%;
   z-index: -1;
   padding: 4px;
 }
@@ -193,6 +193,9 @@ li:hover {
     padding-left: 15%;
     padding-right: 15%;
   }
+  #message{
+    left: 15%;
+  }
 }
 
 
@@ -206,6 +209,9 @@ li:hover {
   main { 
     padding-right: 5%;
     padding-left: 5%;
+  }
+  #message{
+    left: 5%;
   }
 }
 
